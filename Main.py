@@ -1,3 +1,14 @@
+# USAGE
+# python pi_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+
+#import necessary packages
+import cv2
+from multiprocessing import Process
+from multiprocessing import Queue
+import numpy as np
+import argparse
+import time
+
 # Setting up the Pi GPIO ports 
 import RPi.GPIO as GPIO
 
